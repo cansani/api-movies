@@ -1,6 +1,7 @@
-const express = require('express')
+require('dotenv/config')
 require('express-async-errors')
 
+const express = require('express')
 const AppError = require('./utils/AppError')
 
 const runMigrations = require('./database/sqlite/migrations')
